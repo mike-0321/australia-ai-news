@@ -1,0 +1,24 @@
+{
+  "corpus_records": 2000,
+  "modelled_articles": 1841,
+  "missing_body_records": 159,
+  "final_counts": {
+    "Positive": 358,
+    "Neutral": 470,
+    "Negative": 1013
+  },
+  "topics": {
+    "Positive": {
+      "articles": 358,
+      "numbered_topics": 9,
+      "assigned": 315,
+      "outliers": 43
+    },
+    "Negative": {
+      "articles": 1013,
+      "numbered_topics": 10,
+      "assigned": 695,
+      "outliers": 318
+    }
+  }
+}

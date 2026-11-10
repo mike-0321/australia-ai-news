@@ -1,0 +1,50 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_batch_size": 32,
+  "random_seed": 42,
+  "umap": {
+    "n_neighbors": 15,
+    "n_components": 5,
+    "min_dist": 0.0,
+    "metric": "cosine",
+    "low_memory": true
+  },
+  "hdbscan": {
+    "metric": "euclidean",
+    "cluster_selection_method": "eom",
+    "prediction_data": true,
+    "core_dist_n_jobs": 1
+  },
+  "groups": {
+    "Positive": {
+      "min_cluster_size": 12,
+      "min_samples": 5,
+      "vectorizer_min_df": 2
+    },
+    "Negative": {
+      "min_cluster_size": 25,
+      "min_samples": 8,
+      "vectorizer_min_df": 3
+    }
+  },
+  "ngram_range": [
+    1,
+    2
+  ],
+  "domain_stop_words": [
+    "ai",
+    "artificial intelligence",
+    "australia",
+    "australian",
+    "australians",
+    "guardian",
+    "new",
+    "news",
+    "people",
+    "said",
+    "say",
+    "says",
+    "time",
+    "year"
+  ]
+}

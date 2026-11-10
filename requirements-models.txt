@@ -1,0 +1,11 @@
+-r requirements.txt
+torch>=2.6,<3
+transformers>=4.48,<6
+sentencepiece>=0.2,<1
+bertopic==0.17.4
+sentence-transformers==5.7.0
+umap-learn==0.5.12
+hdbscan==0.8.44
+seaborn==0.13.2
+plotly>=5.24,<7
+networkx>=3.3,<4
